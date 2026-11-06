@@ -20,3 +20,16 @@ hover-col: "#A47757"
 navbar-col: "#E8E5DC"
 navbar-text-col: "#343A35"
 footer-col: "#E8E5DC"
+
+#Navigation bar
+navbar-links:
+  About This Blog: "blog"
+  Who Is Grace?: "about"
+  Applying to Graduate School:
+    Finding a Graduate Advisor: "finding-an-advisor"
+    Graduate School Applications: "applications"
+    Fellowships and Funding: "fellowships"
+  Preparing for Graduate School: "preparing"
+  Life in Graduate School: "life-in-grad-school"
+  FAQ: "faq"
+
