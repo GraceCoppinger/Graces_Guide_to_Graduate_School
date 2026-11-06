@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,25 +6,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Graces Guide to Graduate School</title>
+    <title>Grace's Guide to Graduate School</title>
 
     <!-- Bootstrap CSS -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
     >
+
+    <style>
+        /* ========================= */
+        /* COLOR PALETTE */
+        /* ========================= */
+
+        :root {
+            --dark-brown: #4f3c18;
+            --gold: #bc9906;
+            --sage-teal: #519183;
+            --blue: #298cae;
+            --cream: #fff6ea;
+            --white: #ffffff;
+        }
+
+        /* ========================= */
+        /* GENERAL STYLING */
+        /* ========================= */
+
+        body {
+            background-color: var(--cream);
+            color: var(--dark-brown);
+        }
+
+        h1, h2, h3, h4, h5 {
+            color: var(--dark-brown);
+        }
+
+        .text-muted {
+            color: #716957 !important;
+        }
+
+        /* ========================= */
+        /* NAVIGATION BAR */
+        /* ========================= */
+
+        .navbar {
+            background-color: var(--dark-brown) !important;
+        }
+
+        .navbar-brand {
+            color: var(--gold) !important;
+        }
+
+        .navbar .nav-link {
+            color: var(--cream) !important;
+            transition: color 0.2s ease;
+        }
+
+        .navbar .nav-link:hover,
+        .navbar .nav-link:focus {
+            color: var(--gold) !important;
+        }
+
+        .navbar-toggler {
+            border-color: var(--cream);
+        }
+
+        .navbar-toggler-icon {
+            filter: invert(1);
+        }
+
+        .dropdown-menu {
+            background-color: var(--cream);
+            border: 1px solid var(--gold);
+        }
+
+        .dropdown-item {
+            color: var(--dark-brown);
+        }
+
+        .dropdown-item:hover {
+            background-color: var(--sage-teal);
+            color: var(--white);
+        }
+
+        /* ========================= */
+        /* HERO SECTION */
+        /* ========================= */
+
+        .hero-section {
+            background-image: url('images/hero.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero-section h1,
+        .hero-section p {
+            color: var(--white);
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.65);
+        }
+
+        /* ========================= */
+        /* SECTION BACKGROUNDS */
+        /* ========================= */
+
+        .cream-section {
+            background-color: var(--cream);
+        }
+
+        .white-section {
+            background-color: var(--white);
+        }
+
+        .teal-section {
+            background-color: var(--sage-teal);
+        }
+
+        /* ========================= */
+        /* HEADINGS */
+        /* ========================= */
+
+        .section-heading {
+            color: var(--dark-brown);
+        }
+
+        .accent-heading {
+            color: var(--sage-teal);
+        }
+
+        /* ========================= */
+        /* CARDS */
+        /* ========================= */
+
+        .card {
+            background-color: var(--white);
+            border-radius: 12px;
+            transition: transform 0.2s ease,
+                        box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(79, 60, 24, 0.12) !important;
+        }
+
+        /* ========================= */
+        /* BUTTONS */
+        /* ========================= */
+
+        .btn-primary-custom {
+            background-color: var(--blue);
+            color: var(--white);
+            border: none;
+        }
+
+        .btn-primary-custom:hover {
+            background-color: var(--sage-teal);
+            color: var(--white);
+        }
+
+        /* ========================= */
+        /* START HERE LIST */
+        /* ========================= */
+
+        .list-group-item {
+            background-color: var(--white);
+            color: var(--dark-brown);
+            border-color: #e8dfd0;
+        }
+
+        .list-group-item:hover {
+            background-color: var(--cream);
+        }
+
+        .list-group-item h5 {
+            color: var(--sage-teal);
+        }
+
+        /* ========================= */
+        /* ACCENT DETAILS */
+        /* ========================= */
+
+        .gold-accent {
+            color: var(--gold);
+        }
+
+        /* ========================= */
+        /* FOOTER / LINKS */
+        /* ========================= */
+
+        a {
+            transition: color 0.2s ease;
+        }
+
+    </style>
 </head>
-  
+
 <body>
 
 <!-- ========================= -->
-<!-- Navigation Bar -->
+<!-- NAVIGATION BAR -->
 <!-- ========================= -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+<nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
 
-        <a class="navbar-brand fw-bold" href="index.html" style="color: #8A9A5B;">
+        <a class="navbar-brand fw-bold" href="index.html">
             Grace's Guide to Graduate School
         </a>
 
@@ -43,21 +231,18 @@
 
             <ul class="navbar-nav ms-auto">
 
-                <!-- About This Blog -->
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html" style="color: #8A9A5B;">
+                    <a class="nav-link" href="index.html">
                         About This Blog
                     </a>
                 </li>
 
-                <!-- Who Is Grace -->
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html" style="color: #8A9A5B;">
+                    <a class="nav-link" href="about.html">
                         Who Is Grace?
                     </a>
                 </li>
 
-                <!-- Applying to Graduate School Dropdown -->
                 <li class="nav-item dropdown">
                     <a
                         class="nav-link dropdown-toggle"
@@ -66,7 +251,6 @@
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
-                        style="color: #8A9A5B;"
                     >
                         Applying to Graduate School
                     </a>
@@ -90,23 +274,20 @@
                     </ul>
                 </li>
 
-                <!-- Preparing for Graduate School -->
                 <li class="nav-item">
-                    <a class="nav-link" href="preparing.html" style="color: #8A9A5B;">
+                    <a class="nav-link" href="preparing.html">
                         Preparing for Graduate School
                     </a>
                 </li>
 
-                <!-- Life in Graduate School -->
                 <li class="nav-item">
-                    <a class="nav-link" href="life-in-grad-school.html" style="color: #8A9A5B;">
+                    <a class="nav-link" href="life-in-grad-school.html">
                         Life in Graduate School
                     </a>
                 </li>
 
-                <!-- FAQ -->
                 <li class="nav-item">
-                    <a class="nav-link" href="faq.html" style="color: #8A9A5B;">
+                    <a class="nav-link" href="faq.html">
                         FAQ
                     </a>
                 </li>
@@ -116,25 +297,17 @@
     </div>
 </nav>
 
-  <!-- ========================= -->
-<!-- About This Blog  -->
+
+<!-- ========================= -->
+<!-- ABOUT THIS BLOG / HERO -->
 <!-- ========================= -->
 
-<section
-    class="py-5"
-    style="
-        background-image: url('images/hero.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    "
->
+<section class="hero-section py-5">
 
     <div class="container py-5">
 
         <div class="row align-items-center">
 
-            <!-- Photo -->
             <div class="col-lg-4 text-center mb-4 mb-lg-0">
 
                 <img
@@ -146,25 +319,24 @@
 
             </div>
 
-            <!-- Text -->
             <div class="col-lg-8">
 
-                <h1 class="display-3 fw-bold" style="color: #e8f4c2;">
+                <h1 class="display-3 fw-bold">
                     About This Blog
                 </h1>
 
-<p class="lead mt-4" style="color: #e8f4c2;">
-    Applying to graduate school can feel overwhelming.
-    From finding the right advisor to navigating applications,
-    funding, and the transition to graduate student life,
-    there is a lot to figure out.
-           </p>
+                <p class="lead mt-4">
+                    Applying to graduate school can feel overwhelming.
+                    From finding the right advisor to navigating applications,
+                    funding, and the transition to graduate student life,
+                    there is a lot to figure out.
+                </p>
 
-                <p class="lead mt-4" style="color: #e8f4c2;">
-    I created this guide to share advice, resources, and lessons
-    I've learned along the way. Whether you're just beginning
-    to consider graduate school or preparing to submit applications,
-    I hope you find something here that helps you take the next step.
+                <p class="lead mt-4">
+                    I created this guide to share advice, resources, and lessons
+                    I've learned along the way. Whether you're just beginning
+                    to consider graduate school or preparing to submit applications,
+                    I hope you find something here that helps you take the next step.
                 </p>
 
             </div>
@@ -175,34 +347,38 @@
 
 </section>
 
+
 <!-- ========================= -->
-<!-- Explore the Guide -->
+<!-- EXPLORE THE GUIDE -->
 <!-- ========================= -->
 
-<section class="py-5" style="background-color: #f7f7f0;">
+<section class="cream-section py-5">
 
     <div class="container py-4">
 
         <div class="text-center mb-5">
-            <h2 class="fw-bold" style="color: #8A9A5B;">
+
+            <h2 class="fw-bold section-heading">
                 Explore the Guide
             </h2>
+
             <p class="lead text-muted">
                 Everything you need to navigate your graduate school journey.
             </p>
+
         </div>
 
         <div class="row g-4">
 
             <!-- Applying -->
+
             <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm"
-                     style="background-color: #ffffff;">
+
+                <div class="card h-100 border-0 shadow-sm">
 
                     <div class="card-body p-4 text-center">
 
-                        <h3 class="h4 fw-bold mb-3"
-                            style="color: #8A9A5B;">
+                        <h3 class="h4 fw-bold mb-3 accent-heading">
                             Applying to Graduate School
                         </h3>
 
@@ -213,8 +389,7 @@
                         </p>
 
                         <a href="finding-an-advisor.html"
-                           class="btn mt-3"
-                           style="background-color: #8A9A5B; color: white;">
+                           class="btn btn-primary-custom mt-3">
                             Explore Applying
                         </a>
 
@@ -223,14 +398,14 @@
             </div>
 
             <!-- Preparing -->
+
             <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm"
-                     style="background-color: #ffffff;">
+
+                <div class="card h-100 border-0 shadow-sm">
 
                     <div class="card-body p-4 text-center">
 
-                        <h3 class="h4 fw-bold mb-3"
-                            style="color: #8A9A5B;">
+                        <h3 class="h4 fw-bold mb-3 accent-heading">
                             Preparing for Graduate School
                         </h3>
 
@@ -241,8 +416,7 @@
                         </p>
 
                         <a href="preparing.html"
-                           class="btn mt-3"
-                           style="background-color: #8A9A5B; color: white;">
+                           class="btn btn-primary-custom mt-3">
                             Explore Preparing
                         </a>
 
@@ -251,14 +425,14 @@
             </div>
 
             <!-- Life in Graduate School -->
+
             <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm"
-                     style="background-color: #ffffff;">
+
+                <div class="card h-100 border-0 shadow-sm">
 
                     <div class="card-body p-4 text-center">
 
-                        <h3 class="h4 fw-bold mb-3"
-                            style="color: #8A9A5B;">
+                        <h3 class="h4 fw-bold mb-3 accent-heading">
                             Life in Graduate School
                         </h3>
 
@@ -269,8 +443,7 @@
                         </p>
 
                         <a href="life-in-grad-school.html"
-                           class="btn mt-3"
-                           style="background-color: #8A9A5B; color: white;">
+                           class="btn btn-primary-custom mt-3">
                             Explore Grad Life
                         </a>
 
@@ -284,16 +457,15 @@
 
 
 <!-- ========================= -->
-<!-- A Little About Me -->
+<!-- A LITTLE ABOUT ME -->
 <!-- ========================= -->
 
-<section class="py-5" style="background-color: #ffffff;">
+<section class="white-section py-5">
 
     <div class="container py-4">
 
         <div class="row align-items-center">
 
-            <!-- Photo -->
             <div class="col-md-4 text-center mb-4 mb-md-0">
 
                 <img
@@ -305,10 +477,9 @@
 
             </div>
 
-            <!-- Introduction -->
             <div class="col-md-8">
 
-                <h2 class="fw-bold mb-3" style="color: #8A9A5B;">
+                <h2 class="fw-bold mb-3 section-heading">
                     A Little About Me
                 </h2>
 
@@ -330,8 +501,7 @@
                 </p>
 
                 <a href="about.html"
-                   class="btn mt-2"
-                   style="background-color: #8A9A5B; color: white;">
+                   class="btn btn-primary-custom mt-2">
                     Get to Know Me
                 </a>
 
@@ -343,16 +513,16 @@
 
 
 <!-- ========================= -->
-<!-- Start Here -->
+<!-- START HERE -->
 <!-- ========================= -->
 
-<section class="py-5" style="background-color: #f7f7f0;">
+<section class="cream-section py-5">
 
     <div class="container py-4">
 
         <div class="text-center mb-5">
 
-            <h2 class="fw-bold" style="color: #8A9A5B;">
+            <h2 class="fw-bold section-heading">
                 Not Sure Where to Start?
             </h2>
 
@@ -371,7 +541,7 @@
                     <a href="finding-an-advisor.html"
                        class="list-group-item list-group-item-action p-4">
 
-                        <h5 class="fw-bold mb-2" style="color: #8A9A5B;">
+                        <h5 class="fw-bold mb-2">
                             01. Finding a Graduate Advisor
                         </h5>
 
@@ -386,7 +556,7 @@
                     <a href="applications.html"
                        class="list-group-item list-group-item-action p-4">
 
-                        <h5 class="fw-bold mb-2" style="color: #8A9A5B;">
+                        <h5 class="fw-bold mb-2">
                             02. Graduate School Applications
                         </h5>
 
@@ -401,7 +571,7 @@
                     <a href="fellowships.html"
                        class="list-group-item list-group-item-action p-4">
 
-                        <h5 class="fw-bold mb-2" style="color: #8A9A5B;">
+                        <h5 class="fw-bold mb-2">
                             03. Fellowships and Funding
                         </h5>
 
@@ -420,5 +590,28 @@
     </div>
 </section>
 
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer class="py-4 text-center"
+        style="background-color: var(--dark-brown); color: var(--cream);">
+
+    <div class="container">
+        <p class="mb-0">
+            Grace's Guide to Graduate School
+            <span style="color: var(--gold);">|</span>
+            Made with care by Grace
+        </p>
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+</body>
+</html>
