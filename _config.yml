@@ -1,35 +1,4 @@
-remote_theme: daattali/beautiful-jekyll@6.0.1
-
-plugins:
-  - jekyll-remote-theme
-  - jekyll-paginate
-  - jekyll-sitemap
-
-title: "Grace's Guide to Graduate School"
-author: "Grace Sinclair"
-description: "Honest advice, resources, and experiences for navigating graduate school."
-
-url: "https://gracecoppinger.github.io"
-baseurl: "/graces-guide-to-graduate-school"
-
-#Website Colors
-page-col: "#FAF9F6"
-text-col: "#343A35"
-link-col: "#647D68"
-hover-col: "#A47757"
-navbar-col: "#E8E5DC"
-navbar-text-col: "#343A35"
-footer-col: "#E8E5DC"
-
-#Navigation bar
-navbar-links:
-  About This Blog: "blog"
-  Who Is Grace?: "about"
-  Applying to Graduate School:
-    Finding a Graduate Advisor: "finding-an-advisor"
-    Graduate School Applications: "applications"
-    Fellowships and Funding: "fellowships"
-  Preparing for Graduate School: "preparing"
-  Life in Graduate School: "life-in-grad-school"
-  FAQ: "faq"
-
+title: Grace's Guide to Graduate School
+author: Grace Sinclair
+description: Honest advice, resources, and experiences for navigating graduate school.
+theme: minima
