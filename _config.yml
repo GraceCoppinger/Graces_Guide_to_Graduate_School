@@ -11,3 +11,12 @@ description: "Honest advice, resources, and experiences for navigating graduate 
 
 url: "https://gracecoppinger.github.io"
 baseurl: "/graces-guide-to-graduate-school"
+
+#Website Colors
+page-col: "#FAF9F6"
+text-col: "#343A35"
+link-col: "#647D68"
+hover-col: "#A47757"
+navbar-col: "#E8E5DC"
+navbar-text-col: "#343A35"
+footer-col: "#E8E5DC"
