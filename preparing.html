@@ -14,8 +14,11 @@
         rel="stylesheet"
     >
 
-    <!-- Your Website Styling -->
     <style>
+        /* ========================= */
+        /* COLOR PALETTE */
+        /* ========================= */
+
         :root {
             --dark-brown: #4f3c18;
             --gold: #bc9906;
@@ -25,42 +28,79 @@
             --white: #ffffff;
         }
 
+        /* ========================= */
+        /* GENERAL STYLING */
+        /* ========================= */
+
         body {
             background-color: var(--cream);
             color: var(--dark-brown);
         }
 
-h1, h2, h3, h4, h5 {
-    color: var(--dark-brown);
-}
+        h1, h2, h3, h4, h5 {
+            color: var(--dark-brown);
+        }
 
-h2 {
-    color: var(--sage-teal);
-    font-size: 1.75rem;
-}
+        h2 {
+            color: var(--sage-teal);
+            font-size: 1.75rem;
+        }
 
-h3 {
-    color: var(--sage-teal);
-    font-size: 1.4rem;
-}
+        h3 {
+            color: var(--sage-teal);
+            font-size: 1.4rem;
+        }
+
+        .text-muted {
+            color: #716957 !important;
+        }
+
+        /* ========================= */
+        /* NAVIGATION BAR */
+        /* ========================= */
+
         .navbar {
-            background-color: var(--dark-brown);
+            background-color: var(--dark-brown) !important;
+            padding-top: 0.65rem;
+            padding-bottom: 0.65rem;
         }
 
         .navbar-brand {
             color: var(--gold) !important;
+            font-size: 1.05rem;
+            white-space: nowrap;
+            margin-right: 1.5rem;
+        }
+
+        .navbar-nav {
+            gap: 0.35rem;
         }
 
         .navbar .nav-link {
             color: var(--cream) !important;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            padding-left: 0.55rem !important;
+            padding-right: 0.55rem !important;
+            transition: color 0.2s ease;
         }
 
-        .navbar .nav-link:hover {
+        .navbar .nav-link:hover,
+        .navbar .nav-link:focus {
             color: var(--gold) !important;
+        }
+
+        .navbar-toggler {
+            border-color: var(--cream);
+        }
+
+        .navbar-toggler-icon {
+            filter: invert(1);
         }
 
         .dropdown-menu {
             background-color: var(--cream);
+            border: 1px solid var(--gold);
         }
 
         .dropdown-item {
@@ -72,6 +112,10 @@ h3 {
             color: var(--white);
         }
 
+        /* ========================= */
+        /* BUTTONS */
+        /* ========================= */
+
         .btn-primary-custom {
             background-color: var(--blue);
             color: var(--white);
@@ -82,6 +126,15 @@ h3 {
             background-color: var(--sage-teal);
             color: var(--white);
         }
+
+        /* ========================= */
+        /* FOOTER / LINKS */
+        /* ========================= */
+
+        a {
+            transition: color 0.2s ease;
+        }
+
     </style>
 
 </head>
@@ -89,67 +142,6 @@ h3 {
 <body>
 
 <!-- ========================= -->
-<!-- NAVIGATION BAR -->
-<!-- ========================= -->
-
-/* ========================= */
-/* NAVIGATION BAR */
-/* ========================= */
-
-.navbar {
-    background-color: var(--dark-brown) !important;
-    padding-top: 0.65rem;
-    padding-bottom: 0.65rem;
-}
-
-.navbar-brand {
-    color: var(--gold) !important;
-    font-size: 1.05rem;
-    white-space: nowrap;
-    margin-right: 1.5rem;
-}
-
-.navbar-nav {
-    gap: 0.35rem;
-}
-
-.navbar .nav-link {
-    color: var(--cream) !important;
-    font-size: 0.9rem;
-    white-space: nowrap;
-    padding-left: 0.55rem !important;
-    padding-right: 0.55rem !important;
-    transition: color 0.2s ease;
-}
-
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
-    color: var(--gold) !important;
-}
-
-.navbar-toggler {
-    border-color: var(--cream);
-}
-
-.navbar-toggler-icon {
-    filter: invert(1);
-}
-
-.dropdown-menu {
-    background-color: var(--cream);
-    border: 1px solid var(--gold);
-}
-
-.dropdown-item {
-    color: var(--dark-brown);
-}
-
-.dropdown-item:hover {
-    background-color: var(--sage-teal);
-    color: var(--white);
-}
-
-    <!-- ========================= -->
 <!-- NAVIGATION BAR -->
 <!-- ========================= -->
 
@@ -206,14 +198,16 @@ h3 {
                                 Finding an Advisor
                             </a>
                         </li>
+
                         <li>
                             <a class="dropdown-item" href="applications.html">
                                 Applications
                             </a>
                         </li>
+
                         <li>
                             <a class="dropdown-item" href="fellowships.html">
-                                Fellowships & Funding
+                                Fellowships &amp; Funding
                             </a>
                         </li>
                     </ul>
@@ -242,6 +236,7 @@ h3 {
     </div>
 </nav>
 
+
 <!-- ========================= -->
 <!-- PAGE HEADER -->
 <!-- ========================= -->
@@ -258,7 +253,7 @@ h3 {
 
         <p class="lead"
            style="color: var(--white);">
-            What you can do to prepare for graduate school. 
+            What you can do to prepare for graduate school.
         </p>
 
     </div>
@@ -274,78 +269,98 @@ h3 {
 
     <div class="container">
 
-        <h2>Reading scientific papers</h2>
+        <!-- Reading Scientific Papers -->
+
+        <h2 class="mb-3">Reading Scientific Papers</h2>
 
         <p>
-There are many ways to find scientific papers, but I prefer to use google scholar as a search engine.  
-Papers are published in different journals and each journal is different in terms of its academic impact. 
-Journals like Nature, Cell, and Science have very high impacts and papers published here are highly regarded. 
-Don't only read from those journals but just be aware there are different levels of credibility. 
-This is because each journal has its own metric for peer review. 
-I really recommend focusing on more recent published papers (2020-2025) since the wording will be more friendly. 
+            There are many ways to find scientific papers, but I prefer
+            to use Google Scholar as a search engine. Papers are published
+            in different journals, and each journal is different in terms
+            of its academic impact.
+
+            Journals like Nature, Cell, and Science have very high impact,
+            and papers published here are highly regarded. Don't only read
+            from those journals, but be aware that there are different
+            levels of credibility. This is because each journal has its
+            own standards for peer review.
+
+            I really recommend focusing on more recently published papers
+            (2020–2025), since the wording will be more friendly.
         </p>
 
-      <p>
-      Journals I really like:
+        <h3 class="mt-4 mb-3">Journals I Really Like</h3>
 
-<a href="https://www.nature.com/natecolevol/"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="btn btn-primary-custom mt-2">
-    Nature Ecology and Evolution
-</a>
-        <a href="https://www.journals.uchicago.edu/journals/an/about"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="btn btn-primary-custom mt-2">
-    American Naturalist
-</a>
-        </a>
-        <a href="https://www.frontiersin.org/journals/plant-science"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="btn btn-primary-custom mt-2">
-    Frontiers in Plant Science 
-</a>
-</p>
+        <div class="d-flex flex-wrap gap-2 mb-5">
 
-              <h2>Reading popular science books</h2>
+            <a href="https://www.nature.com/natecolevol/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-primary-custom">
+                Nature Ecology and Evolution
+            </a>
+
+            <a href="https://www.journals.uchicago.edu/journals/an/about"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-primary-custom">
+                American Naturalist
+            </a>
+
+            <a href="https://www.frontiersin.org/journals/plant-science"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-primary-custom">
+                Frontiers in Plant Science
+            </a>
+
+        </div>
+
+
+        <!-- Reading Popular Science Books -->
+
+        <h2 class="mb-3">Reading Popular Science Books</h2>
 
         <p>
-Something that has been immensely helpful to me in graduate school has been reading popular science books. 
-          I like to think of them as a 300 page textbook on a niche subject. 
-          It is a great way to gain insight to new fields and expand your knowledge to pull from in conversations. 
-          During my qualifying exam for example I was constantly using references I actually had read about in my popular science books! 
-          I feel like they have made me a much more well rounded scientist and have greatly improved my conversation skills!
+            Something that has been immensely helpful to me in graduate
+            school has been reading popular science books. I like to think
+            of them as a 300-page textbook on a niche subject.
 
-        </p>
-<h3>Graces favorite popular science books</h3>
-      <p>
-        Sea of Grass: The Conquest, Ruin, and Redemption of Nature on the American Prairie
-                <a href="https://www.google.com/url?q=https://www.goodreads.com/book/show/218153677-sea-of-grass&sa=D&source=docs&ust=1793994365128556&usg=AOvVaw0tw-RQEwMsUWfTlNDS8hNj"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="btn btn-primary-custom mt-2">
-    Sea of Grass
-</a>
-        Crossings: How Road Ecology Is Shaping the Future of Our Planet
-<a href="https://www.goodreads.com/book/show/123627807-crossings"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="btn btn-primary-custom mt-2">
-    Crossings
-</a>
-The Catalyst: RNA and the Quest to Unlock Life's Deepest Secrets
-   
-<a href="google.com/url?q=https://www.goodreads.com/book/show/200245952-the-catalyst&sa=D&source=docs&ust=1793994296216196&usg=AOvVaw0Nb2MDIUL-dhWevfb3magR"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="btn btn-primary-custom mt-2">
-The Catalyst
-</a>
+            It is a great way to gain insight into new fields and expand
+            your knowledge to pull from in conversations.
 
+            During my qualifying exam, for example, I was constantly using
+            references I had actually read about in my popular science
+            books! I feel like they have made me a much more well-rounded
+            scientist and have greatly improved my conversation skills!
         </p>
 
+        <h3 class="mt-4 mb-3">Grace's Favorite Popular Science Books</h3>
+
+        <div class="d-flex flex-wrap gap-2">
+
+            <a href="https://www.goodreads.com/book/show/218153677-sea-of-grass"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-primary-custom">
+                Sea of Grass
+            </a>
+
+            <a href="https://www.goodreads.com/book/show/123627807-crossings"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-primary-custom">
+                Crossings
+            </a>
+
+            <a href="https://www.goodreads.com/book/show/200245952-the-catalyst"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-primary-custom">
+                The Catalyst
+            </a>
+
+        </div>
 
     </div>
 
@@ -374,5 +389,3 @@ The Catalyst
 
 </body>
 </html>
-
-
