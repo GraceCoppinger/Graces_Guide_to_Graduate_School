@@ -49,46 +49,62 @@
         /* NAVIGATION BAR */
         /* ========================= */
 
-        .navbar {
-            background-color: var(--dark-brown) !important;
-        }
+/* ========================= */
+/* NAVIGATION BAR */
+/* ========================= */
 
-        .navbar-brand {
-            color: var(--gold) !important;
-        }
+.navbar {
+    background-color: var(--dark-brown) !important;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+}
 
-        .navbar .nav-link {
-            color: var(--cream) !important;
-            transition: color 0.2s ease;
-        }
+.navbar-brand {
+    color: var(--gold) !important;
+    font-size: 1.05rem;
+    white-space: nowrap;
+    margin-right: 1.5rem;
+}
 
-        .navbar .nav-link:hover,
-        .navbar .nav-link:focus {
-            color: var(--gold) !important;
-        }
+.navbar-nav {
+    gap: 0.35rem;
+}
 
-        .navbar-toggler {
-            border-color: var(--cream);
-        }
+.navbar .nav-link {
+    color: var(--cream) !important;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    padding-left: 0.55rem !important;
+    padding-right: 0.55rem !important;
+    transition: color 0.2s ease;
+}
 
-        .navbar-toggler-icon {
-            filter: invert(1);
-        }
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: var(--gold) !important;
+}
 
-        .dropdown-menu {
-            background-color: var(--cream);
-            border: 1px solid var(--gold);
-        }
+.navbar-toggler {
+    border-color: var(--cream);
+}
 
-        .dropdown-item {
-            color: var(--dark-brown);
-        }
+.navbar-toggler-icon {
+    filter: invert(1);
+}
 
-        .dropdown-item:hover {
-            background-color: var(--sage-teal);
-            color: var(--white);
-        }
+.dropdown-menu {
+    background-color: var(--cream);
+    border: 1px solid var(--gold);
+}
 
+.dropdown-item {
+    color: var(--dark-brown);
+}
+
+.dropdown-item:hover {
+    background-color: var(--sage-teal);
+    color: var(--white);
+}
         /* ========================= */
         /* HERO SECTION */
         /* ========================= */
@@ -212,7 +228,7 @@
     <div class="container">
 
         <a class="navbar-brand fw-bold" href="index.html">
-            Grace's Guide to Graduate School
+            Grace's Guide
         </a>
 
         <button
@@ -233,13 +249,13 @@
 
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">
-                        About This Blog
+                        Home
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">
-                        Who Is Grace?
+                        About Me
                     </a>
                 </li>
 
@@ -252,23 +268,23 @@
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                     >
-                        Applying to Graduate School
+                        Applying
                     </a>
 
                     <ul class="dropdown-menu">
                         <li>
                             <a class="dropdown-item" href="finding-an-advisor.html">
-                                Finding a Graduate Advisor
+                                Finding an Advisor
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="applications.html">
-                                Graduate School Applications
+                                Applications
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="fellowships.html">
-                                Fellowships and Funding
+                                Fellowships & Funding
                             </a>
                         </li>
                     </ul>
@@ -276,13 +292,13 @@
 
                 <li class="nav-item">
                     <a class="nav-link" href="preparing.html">
-                        Preparing for Graduate School
+                        Getting Started
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="life-in-grad-school.html">
-                        Life in Graduate School
+                        Grad School Life
                     </a>
                 </li>
 
@@ -363,7 +379,7 @@
             </h2>
 
             <p class="lead text-muted">
-                Everything you need to navigate your graduate school journey.
+                Navigate your graduate school journey.
             </p>
 
         </div>
@@ -523,12 +539,8 @@
         <div class="text-center mb-5">
 
             <h2 class="fw-bold section-heading">
-                Not Sure Where to Start?
+                Places to Start
             </h2>
-
-            <p class="lead text-muted">
-                Here are a few places I recommend starting your journey.
-            </p>
 
         </div>
 
